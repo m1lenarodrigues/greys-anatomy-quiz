@@ -5,6 +5,8 @@ import QuizLogo from '../src/components/QuizLogo';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Footer from '../src/components/Footer';
 import QuizBackground from '../src/components/QuizBackground';
+import Button from '../src/components/Button'
+
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -18,9 +20,9 @@ export const QuizContainer = styled.div`
   }
 `;
 
-
 export default function Home() {
   return (
+
    <QuizBackground  backgroundImage={db.bg}>
      <QuizContainer>
       <QuizLogo />
@@ -31,13 +33,18 @@ export default function Home() {
           <Widget.Content>
             <p>{db.description}</p>
           </Widget.Content>
+          <Button primary>{db.botaoIniciar}</Button>
         </Widget>
 
         <Widget>
-          <Widget.Content>
+          <Widget.Header>
             <h1>Quizes da Galera</h1>
+          </Widget.Header>
 
-            <p>lorem ipsum dolor sit amet...</p>
+          <Widget.Content>          
+
+            <p>Aqui você vai encontrar outros quizes para testar seus conhecimentos...</p>
+
           </Widget.Content>
         </Widget>
       <Footer />

@@ -1,5 +1,6 @@
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
 import db from '../db.json';
+import Meta from '../src/components/Meta'
 
 const theme = db.theme;
 
@@ -29,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
 export default function App({Component, pageProps}) {
   return (
     <>
+      <Meta/>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
 
