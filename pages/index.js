@@ -19,8 +19,7 @@ export const QuizContainer = styled.div`
   padding: 15px;
   }
 `;
-
-export default function Home() {
+export default function Home(){
   return (
 
    <QuizBackground  backgroundImage={db.bg}>
@@ -33,6 +32,7 @@ export default function Home() {
           <Widget.Content>
             <p>{db.description}</p>
           </Widget.Content>
+          <Button.Input placeholder="Diz aqui o seu nome..." defaultValue="" type="text" />
           <Button primary>{db.botaoIniciar}</Button>
         </Widget>
 
