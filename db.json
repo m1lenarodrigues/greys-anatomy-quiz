@@ -2,7 +2,8 @@
     "bg": "https://images3.alphacoders.com/853/thumb-1920-853244.jpg",
     "title": "Grey's Anatomy",
     "description": "Você sobreviveria a um episódio de Grey's Anatomy? Vamos testar seus conhecimentos!",
-    "botaoIniciar": "Vamos começar?",
+    "botaoIniciar": "vamos começar?",
+    "bgPergunta01": "https://assets0.minhaserie.com.br/uploads/editor_pictures/000/063/414/content_pic.jpg",
     "theme": {
         "colors": {
             "primary": "#4dd0e1",

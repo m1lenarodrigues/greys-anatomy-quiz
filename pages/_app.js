@@ -1,6 +1,7 @@
+import React from 'react';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
 import db from '../db.json';
-import Meta from '../src/components/Meta'
+import Meta from '../src/components/Meta';
 
 const theme = db.theme;
 
