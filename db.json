@@ -1,0 +1,12 @@
+{
+    "bg": "https://images3.alphacoders.com/853/thumb-1920-853244.jpg",
+    "title": "Grey's Anatomy",
+    "description": "A série acompanha a vida de Meredith Grey (Ellen Pompeo), filha da respeitada cirurgiã geral Ellis Grey, após seu ingresso no programa de residência no Seattle Grace Hospital.",
+    "theme": {
+        "colors": {
+            "primary": "#4dd0e1",
+            "contrastText": "#FFF",
+            "mainBg": "#b2ebf2"
+        }
+    }
+}
