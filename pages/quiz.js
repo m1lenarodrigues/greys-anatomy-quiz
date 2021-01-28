@@ -8,6 +8,7 @@ import QuizContainer from '../src/components/QuizContainer';
 import QuestionWidget from '../src/components/QuestionWidget';
 import LoadingWidget from '../src/components/LoadingWidget';
 import next from 'next';
+import ResultWidget from '../src/components/ResultWidget';
 
 
 const screenStates = {
@@ -29,12 +30,16 @@ export default function QuizPage(){
         }, 1 * 1000);
       }, []);
     
+
+    function guardarAlternativa(params) {
+        console.log("clicou na alternativa:", params)
+
+    }
     function handleSubmitQuiz() {
         const nextQuestion = questionIndex + 1;
         if (nextQuestion < totalDeQuestao) {
-            console.log("teste", nextQuestion);
             setCurrentQuestion(nextQuestion);
-            console.log(currentQuestion);
+            // guardarAlternativa(e.target.value);
         } else {
             setScreenState(screenStates.RESULT);
         }
@@ -45,15 +50,19 @@ export default function QuizPage(){
         <QuizBackground  backgroundImage={db.bg}>
             <QuizContainer>
                 <QuizLogo />
+                {screenState === screenStates.QUIZ && (
                 <QuestionWidget 
                     question = {question} 
+                    respota = {question.resposta}
                     totalDeQuestao={totalDeQuestao} 
                     questionIndex={questionIndex}
-                    onSubmit={handleSubmitQuiz}/>
-            </QuizContainer>
-            {screenState === screenStates.LOADING && <LoadingWidget />}
+                    onSubmit={handleSubmitQuiz}
+                    guardarAlternativa={guardarAlternativa}/> )}
 
-            {screenState === screenStates.RESULT && <div>Você acertou X questões, parabéns!</div>}
+                    {screenState === screenStates.LOADING && <LoadingWidget />}
+                    {screenState === screenStates.RESULT && <ResultWidget />}
+            </QuizContainer>
+           
         </QuizBackground>
     )
 }

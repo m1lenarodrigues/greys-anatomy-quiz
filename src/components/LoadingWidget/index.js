@@ -1,15 +1,12 @@
 import React from 'react';
 import Widget from '../Widget';
+import ReactLoading from "react-loading";
 
 export default function LoadingWidget() {
     return (
       <Widget>
-        <Widget.Header>
-          Carregando...
-        </Widget.Header>
-  
         <Widget.Content>
-          [Desafio do Loading]
+          <ReactLoading color="#fff" />
         </Widget.Content>
       </Widget>
     );

@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Widget from '../Widget';
-import db from '../../../db.json';
 import Button from '../Button';
 
-export default function QuestionWidget({ question, totalDeQuestao, questionIndex, onSubmit }){
+export default function QuestionWidget({ question, totalDeQuestao, questionIndex, onSubmit, ...props }){
     const questionId = `question__${questionIndex}`;
 
+    
     return (
         <Widget>
             <Widget.Header>
@@ -40,6 +40,7 @@ export default function QuestionWidget({ question, totalDeQuestao, questionIndex
                                 
                                 <input 
                                 // style={{display: 'none'}} 
+                                value={alternativeIndex+1}
                                 id={alternativeId} name={questionId} type="radio"/>
                             </Widget.Topic>
                         );
