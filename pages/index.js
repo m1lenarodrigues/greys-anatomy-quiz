@@ -9,6 +9,7 @@ import Footer from '../src/components/Footer';
 import QuizBackground from '../src/components/QuizBackground';
 import Button from '../src/components/Button'
 import QuizContainer from '../src/components/QuizContainer';
+import Input from '../src/components/Input';
 
 export default function Home(){
 
@@ -36,8 +37,9 @@ export default function Home(){
             <p>{db.description}</p>
           </Widget.Content>
           <form onSubmit={handleSubmit}>
-            <Button.Input onChange={handleNome} placeholder="Diz aqui o seu nome..."  type="text" />
-            <Button  type="submit" primary disabled={name.length === 0}>Iai {name} {db.botaoIniciar}</Button>
+            <Input onChange={handleNome} placeholder="Diz aqui o seu nome..."  name="nomeJogador" type="text" />
+            <Button  type="submit" primary disabled={name.length === 0}>
+              Iai {name} {db.botaoIniciar}</Button>
           </form>
 
         </Widget>

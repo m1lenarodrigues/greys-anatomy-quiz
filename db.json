@@ -11,5 +11,127 @@
             "mainBg": "#b2ebf2",
             "textos": "#1a237e"
         }
-    }
+    },
+    "questions": [
+        {
+            "image": "https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vbWVkaWEucmJsLm1zL2ltYWdlP3U9JTJGZmlsZXMlMkYyMDE2JTJGMDElMkYxMCUyRjYzNTg4MDQ4MzY4Nzg5MDk0NS0xNTk0NTM5NjU0X0RlcmVrLU1lcmVkaXRoLUdyZXktQW5hdG9teS1HSUZzLmdpZiZhbXA7aG89aHR0cCUzQSUyRiUyRmNkbjEudGhlb2R5c3NleW9ubGluZS5jb20mYW1wO3M9NTUxJmFtcDtoPWMxZjE2OTQzNzkzNDExNjJhMjk2ZDkwODY4NWQ2ODg1ZWQyZDI0Y2EwZTM3ZjA3MjljYjE2YThjY2VhMzEzMzEmYW1wO3NpemU9OTgweCZhbXA7Yz01MDM3NTg1NzYiLCJleHBpcmVzX2F0IjoxNjI5OTU2NTM2fQ.h-8VuHW_XusPKFuYXgpcE8Q7tI06EzZ5MSt1fljCSSo/img.jpg",
+            "title": "Aonde Derek e Meredith se conheceram?",
+            "description": "Essa é pra aquecer",
+            "answer": 4,
+            "alternatives": [
+                "No hospital",
+                "No shopping",
+                "No estacionamento",
+                "No bar"
+            ]
+        },
+        {
+            "image": "https://media4.giphy.com/media/27jUwYAVCcsUw/giphy.gif?cid=ecf05e47harbyw7utpfdmak8oocvmnlfrprdge7vt5jqv935&rid=giphy.gif",
+            "title": "Com quem a ex mulher do Derek traiu ele?",
+            "description": "Faz tempo em haha",
+            "answer": 1,
+            "alternatives": [
+                "Mark Sloan",
+                "Alex Karev",
+                "George O'Malley",
+                "Preston Burke"
+            ]
+        },
+        {
+            "image": "https://data.whicdn.com/images/189757730/original.gif",
+            "title": "Quantos tempo Mark deu para desligar todos os aparelhos se não voltasse do coma?",
+            "description": "Faz tempo em haha",
+            "answer": 3,
+            "alternatives": [
+                "15 dias",
+                "1 ano",
+                "30 dias",
+                "Nunca desligassem"
+            ]
+        },
+        {
+            "image": "https://i1.wp.com/25.media.tumblr.com/tumblr_mdkyypwCIY1qccgb7o10_250.gif",
+            "title": "Quem cortou a perna de Arizona Robbins?",
+            "description": "Faz tempo em haha",
+            "answer": 2,
+            "alternatives": [
+                "Calie Torres",
+                "Alex Karev",
+                "Meredith Grey",
+                "Lexie Grey"
+            ]
+        },
+        {
+            "image": "https://66.media.tumblr.com/f3a11ccaffc3d5c8f012aec2f0ee37a1/tumblr_priy8dwYLx1qbwrnuo1_540.gif",
+            "title": "Qual médico se envolveu com o paciente Denny Duquette ?",
+            "description": "Faz tempo em haha",
+            "answer": 2,
+            "alternatives": [
+                "Miranda Bailey",
+                "Izzie Stevens",
+                "Meredith Grey",
+                "Lexie Grey"
+            ]
+        },
+        {
+            "image": "https://media1.giphy.com/media/DaumwpP89kQNy/200w.gif?cid=ecf05e47h6looq0nldsi4w15t58jo143eajfs9ifsqoqxdqj&rid=200w.gif",
+            "title": "Qual apelido os novos internos dão para Meredith?",
+            "description": "Faz tempo em haha",
+            "answer": 4,
+            "alternatives": [
+                "Nazista",
+                "Rainha da crueldade",
+                "Cruela",
+                "Meduza"
+            ]
+        },
+        {
+            "image": "https://media1.popsugar-assets.com/files/thumbor/MvbyaphCwe_QiXYrcTrBMZmjbhM/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2016/09/24/925/n/40993853/8540141485ac6474_ffAY8h/i/Richard-Ellis-Adele.gif",
+            "title": "Qual o nome da filha do Richard com Ellis?",
+            "description": "Faz tempo em haha",
+            "answer": 2,
+            "alternatives": [
+                "Miranda",
+                "Maggie",
+                "Meredith",
+                "Lexie"
+            ]
+        },
+        {
+            "image": "https://media4.giphy.com/media/xThuW5TepMENPadUNG/200w.gif?cid=ecf05e47h6looq0nldsi4w15t58jo143eajfs9ifsqoqxdqj&rid=200w.gif",
+            "title": "Quais desses foi namorado da Meredith?",
+            "description": "Faz tempo em haha",
+            "answer": 4,
+            "alternatives": [
+                "Derek",
+                "DeLuca",
+                "Nathan",
+                "Todos"
+            ]
+        },
+        {
+            "image": "https://thumbs.gfycat.com/ParchedDecimalBorderterrier-max-1mb.gif",
+            "title": "Como morre a interna Heather Brooks?",
+            "description": "Faz tempo em haha",
+            "answer": 4,
+            "alternatives": [
+                "Afogamento",
+                "Atropelada por um ônibus",
+                "Câncer",
+                "Eletrocutada"
+            ]
+        },
+        {
+            "image": "https://media2.giphy.com/media/l3diMcEp4zAYcZbck/giphy.gif?cid=ecf05e47oopvrhiwf4yz9omjm8ifnrlu51yuuu5fnslyj3yk&rid=giphy.gif",
+            "title": "Complete a frase: O carrossel..",
+            "description": "Faz tempo em haha",
+            "answer": 1,
+            "alternatives": [
+                "Nunca para de girar!",
+                "Está quebrado!",
+                "Não existe!",
+                "Só gira e gira!"
+            ]
+        }
+    ]
 }

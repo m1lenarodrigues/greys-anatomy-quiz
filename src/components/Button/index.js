@@ -14,18 +14,5 @@ const Button = styled.button`
   width:80%;
 `;
 
-Button.Input = styled.input`
-  padding: 0.5em;
-  margin: 0.5em;
-  color: ${props => props.inputColor || "palevioletred"};
-  background: #e3f2fd;
-  border: 1px solid #1e88e5;
-  border-radius: 3px;
-  margin: 1px 35px;
-  width:80%;
-  
-
-`;
-
 
 export default Button;
