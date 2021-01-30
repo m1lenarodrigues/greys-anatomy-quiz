@@ -1,5 +1,4 @@
 import React from 'react';
-import {useRouter} from 'next/router';
 
 import db from '../db.json';
 import QuizBackground from '../src/components/QuizBackground';
@@ -23,6 +22,12 @@ export default function QuizPage(){
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const questionIndex = currentQuestion;
     const question = db.questions[questionIndex];
+    const [results, setResults] = React.useState([]);
+
+    function addResult(result){
+        setResults([...results,
+            result]);
+    }
 
     React.useEffect(() => {
         setTimeout(() => {
@@ -31,15 +36,11 @@ export default function QuizPage(){
       }, []);
     
 
-    function guardarAlternativa(params) {
-        console.log("clicou na alternativa:", params)
-
-    }
     function handleSubmitQuiz() {
         const nextQuestion = questionIndex + 1;
+
         if (nextQuestion < totalDeQuestao) {
             setCurrentQuestion(nextQuestion);
-            // guardarAlternativa(e.target.value);
         } else {
             setScreenState(screenStates.RESULT);
         }
@@ -56,11 +57,12 @@ export default function QuizPage(){
                     respota = {question.resposta}
                     totalDeQuestao={totalDeQuestao} 
                     questionIndex={questionIndex}
+                    addResult={addResult}
                     onSubmit={handleSubmitQuiz}
-                    guardarAlternativa={guardarAlternativa}/> )}
+                    /> )}
 
-                    {screenState === screenStates.LOADING && <LoadingWidget />}
-                    {screenState === screenStates.RESULT && <ResultWidget />}
+                {screenState === screenStates.LOADING && <LoadingWidget />}
+                {screenState === screenStates.RESULT && <ResultWidget results={results} totalDeQuestao={totalDeQuestao} />}
             </QuizContainer>
            
         </QuizBackground>
